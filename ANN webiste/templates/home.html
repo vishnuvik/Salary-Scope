@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Sense</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: url('static/images/pexels-cottonbro-5909818.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3.5rem;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            transition: color 0.3s;
+        }
+        h1:hover {
+            color: #f1c40f;
+        }
+        p {
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            transition: color 0.3s;
+        }
+        p:hover {
+            color: #f1c40f;
+        }
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .navbar-brand, .nav-link {
+            color: #333;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #f1c40f;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 5px;
+        }
+        .btn-custom {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #f1c40f;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Salary Sense</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/predict">Predict Salary</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="mt-5">Welcome to Salary Sense</h1>
+        <p>Use this application to predict your salary based on various factors.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
